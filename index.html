@@ -88,16 +88,6 @@
 		margin-right: 20px;
 	}
 	</style>
-	<script>
-	// Add active class to current menu item
-const currentUrl = window.location.href;
-const navLinks = document.querySelectorAll('nav a');
-navLinks.forEach(link => {
-    if (link.href === currentUrl) {
-        link.classList.add("active");
-	}
-	});
-	</script>
 </head>
 <body>
 	<header>
@@ -168,6 +158,15 @@ navLinks.forEach(link => {
 	<footer>
 		<p>&copy; 2023 Directory Website</p>
 	</footer>
-	<script src="script.js"></script>
+	<script>
+	// Add active class to current menu item
+const currentUrl = window.location.href;
+const navLinks = document.querySelectorAll('nav a');
+navLinks.forEach(link => {
+    if (link.href === currentUrl) {
+        link.classList.add("active");
+	}
+	});
+	</script>
 </body>
 </html>
